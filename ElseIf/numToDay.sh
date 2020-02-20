@@ -1,7 +1,9 @@
 #!/bin/bash -x
+#read number from user and print day 
 
 read -p "Enter the number" num
 
+#check number is equal to specific day or not
 if [ $num -eq 0 ]
 then echo sunday
 elif [ $num -eq 1 ]
