@@ -1,7 +1,10 @@
 #!/bin/bash -x
+#read a single digit number and write the number in word
 
+#reading a number from user
 read -p "Enter single digit number : " num
 
+#checking the number is 0,1,2...
 if [ $num == 0 ]
 then echo "ZERO"
 elif [ $num == 1 ]

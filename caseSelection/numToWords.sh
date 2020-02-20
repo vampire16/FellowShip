@@ -1,6 +1,10 @@
 #!/bin/bash -x
- read -p "enter single digit number : " num
+#read a single digit number and write the number in word
 
+#reading a number from user
+read -p "enter single digit number : " num
+
+#comparing the number with specific number
 case $num in
 0) echo zero ;;
 1) echo one ;;

@@ -1,7 +1,10 @@
 #!/bin/bash -x
+#read a number and display the week day
 
+#reading a number from user
 read -p "enter number between 0-6 : " num
 
+#comparing number with specific cases and printing result
 case $num in
 0) echo sunday ;;
 1) echo monday ;;
