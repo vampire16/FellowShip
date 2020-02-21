@@ -5,24 +5,24 @@
 read -p "Enter single digit number : " num
 
 #checking the number is 0,1,2...
-if [ $num == 0 ]
+if [ $num -eq 0 ]
 then echo "ZERO"
-elif [ $num == 1 ]
+elif [ $num -eq 1 ]
 then echo "ONE"
-elif [ $num == 2 ]
+elif [ $num -eq 2 ]
 then echo "Two"
-elif [ $num == 3 ]
+elif [ $num -eq 3 ]
 then echo "Three"
-elif [ $num == 4 ]
+elif [ $num -eq 4 ]
 then echo "Four"
-elif [ $num == 5 ]
+elif [ $num -eq 5 ]
 then echo "Five"
-elif [ $num == 6 ]
+elif [ $num -eq 6 ]
 then echo "Six"
-elif [ $num == 7 ]
+elif [ $num -eq 7 ]
 then echo "Seven"
-elif [ $num == 8 ]
+elif [ $num -eq 8 ]
 then echo "Eight"
-elif [ $num == 9 ]
+elif [ $num -eq 9 ]
 then echo "Nine"
 fi

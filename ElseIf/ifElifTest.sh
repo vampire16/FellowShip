@@ -9,7 +9,7 @@ val2=20
 if [ $val1 -gt $val2 ]
 then
 	echo "$val1 is greater than $val2"
-elif [ $val1 == $val2 ]
+elif [ $val1 -eq $val2 ]
 then
 	echo "variables are equal"
 else

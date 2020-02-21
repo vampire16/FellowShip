@@ -5,12 +5,12 @@
 read -p "Enter any number between 1,10,100,1000 : " num
 
 #checking number with specific number
-if ((num==1))
+if [ $num -eq 0 ]
 then echo unit
-elif ((num==10))
+elif [ $num -eq 10 ]
 then echo ten
-elif ((num==100))
+elif [ $num -eq 100 ]
 then echo hundred
-elif ((num==1000))
+elif [ $num -eq 1000 ]
 then echo thousand
 fi

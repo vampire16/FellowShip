@@ -1,18 +1,18 @@
 #!/bin/bash -x
 #Write a program that reads 5 Random 2 Digit values , then find their sum and average
 
-#declare variable and assign zero
-sum=0;
-
-#random number adding in variable using loop 5 times
-for i in {1..5..1}
-do
-   randomCheck=$((RANDOM%100))
-   sum=$(($sum + $randomCheck))
-   echo $sum      #printing addition of random number and previous random number
-done
-
-avg=$(($sum/5))   #average of 5 random numbers 
+random1=$(( RANDOM%89 + 10 ))
+echo $random1
+random2=$(( RANDOM%89 + 10 ))
+echo $random2
+random3=$(( RANDOM%89 + 10 ))
+echo $random3
+random4=$(( RANDOM%89 + 10 ))
+echo $random4
+random5=$(( RANDOM%89 + 10 ))
+echo $random5
+sum=$(( $random1+$random2+$random3+$random4+$random5 ))
+avg=`expr $(($sum/5)) | bc -l`   
 echo "avg is $avg"
 
 
