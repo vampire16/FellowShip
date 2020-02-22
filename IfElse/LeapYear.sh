@@ -1,19 +1,18 @@
 #!/bin/bash -x
-#write program for leap year
+#WRITE PROGRAM TO CHECK LEAP YEAR
 
-#reading a number from user
+#TAKING INPUT FROM USER
 read -p "Enter year" year
 
-#checking the number with some conditions
 if [ $(($year%4)) -eq 0 ]
 then
 	if [ $(($year%100)) -eq 0 ]
 	then
 		if [ $(($year%400)) -eq 0 ]
-		then echo true
-		else echo false
+		then echo "True"
+		else echo "False"
 		fi
-	else echo true
+	else echo "True"
 	fi
-else echo false
+else echo "False"
 fi
