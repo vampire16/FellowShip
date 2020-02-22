@@ -1,7 +1,6 @@
 #!/bin/bash -x
-#reads 5 random 3 digit values and then outputs the min and max value
 
-#assign 0 to max variable and 999 to min value
+#5 RANDOM NUMBERS WHICH SHOULD BE 3 DIGIT NUMBER
 random1=$((RANDOM%900 +100))
 echo $random1
 random2=$((RANDOM%900 +100))
@@ -56,7 +55,5 @@ then
          max=$random5
 fi
 
-
-#print min and max values
-echo "minimum: $min" 
-echo "maximum: $max"
+echo "Minimum: $min" 
+echo "Maximum: $max"
