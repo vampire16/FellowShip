@@ -3,10 +3,10 @@
 
 read -p " enter number " num
 
-for (( ; $(($num%2)) -eq 0; num=$(($num/2)) ]
+for (( num=$num ; $(($num%2))==0; num=$(($num/2)) ))
 do
    echo "2 "
-   num=$(($num/2))
+   #num=$(($num/2))
 done
 temp=$(echo "sqrt($num)" | bc ) 
 for (( i=3; i<=$temp; i=$i+2 ))

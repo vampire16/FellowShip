@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 read -p " enter number " num
-
+count=0
 function primeFactors(){
 	num=$1
 	while [ $(($num%2)) -eq 0 ]
@@ -20,8 +20,11 @@ function primeFactors(){
 	done
 	if [ $num -gt 2 ]
 	then
-		echo $num
+		#echo $num
+		PrimeFactoresNumber[((count++))]=$num
 	fi
+
+	echo -n ${PrimeFactoresNumber[@]}
 }
 
 echo "$( primeFactors $num )"
